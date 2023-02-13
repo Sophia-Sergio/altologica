@@ -1,0 +1,17 @@
+{
+  "input1": [
+    { "quantity": 2, "name": "book", "cost": 12.49, "type": "book", "imported": false },
+    { "quantity": 1, "name": "music CD", "cost": 14.99, "type": "tech", "imported": false },
+    { "quantity": 1, "name": "chocolate bar", "cost": 0.85, "type": "food", "imported": false }
+  ],
+  "input2": [
+    { "quantity": 1, "name": "imported box of chocolates", "cost": 10.00, "type": "food", "imported": true },
+    { "quantity": 1, "name": "imported bottle of perfume", "cost": 47.50, "type": "perfume", "imported": true }
+  ],
+  "input3": [
+    { "quantity": 1, "name": "imported bottle of perfume", "cost": 27.99, "type": "perfume", "imported": true },
+    { "quantity": 1, "name": "bottle of perfume", "cost": 18.99, "type": "perfume", "imported": false },
+    { "quantity": 1, "name": "packet of headache pills", "cost": 9.75, "type": "medicin", "imported": false },
+    { "quantity": 3, "name": "imported boxes of chocolates", "cost": 11.25, "type": "food", "imported": true }
+  ]
+}
