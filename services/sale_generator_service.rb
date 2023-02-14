@@ -25,9 +25,9 @@ class SaleGeneratorService
   end
 
   def sale_data(sale)
-    sale["basic_tax"] = TAX_FREE.include?(sale["type"]) ? 0.0 : set_tax(sale["cost"], BASIC_TAX)
-    sale["import_tax"] = sale["imported"] ? set_tax(sale["cost"], IMPORT_DUTY) : 0.0
-    sale["total"] = sale["cost"] + add_taxes(sale["basic_tax"], sale["import_tax"])
+    sale["basic_tax"] = TAX_FREE.include?(sale["type"]) ? 0.0 : tax(sale["cost"], BASIC_TAX)
+    sale["import_tax"] = sale["imported"] ? tax(sale["cost"], IMPORT_DUTY) : 0.0
+    sale["total"] = sale["cost"] + sum_taxes(sale["basic_tax"], sale["import_tax"])
     sale
   end
 
