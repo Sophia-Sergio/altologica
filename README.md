@@ -1,9 +1,27 @@
-# Exercise Altologica:
-IMPORTANT:
+# Especifications
 
+Ruby version ``3.2.1``
+
+
+
+``Build`` and ``run`` the image:
+
+```bash
+  docker run --rm -it $(docker build -q .)
+```
+
+>**_NOTE:_** The specs suit runs automatically
+
+
+---
+
+
+## Exercise Altologica:
+
+IMPORTANT:
 Please limit the amount of time you spend on the problem to 4 hours. If you haven't completed the challenge within the allotted time, please submit the work you have completed. Focus on implementing the requirements with the best code you can produce within the given timeframe.
 
-Problem Statement
+### Problem Statement
 
 This problem requires some kind of input. You are free to implement any mechanism for feeding the input into your solution. You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the supplied test data.
 Basic sales tax is applicable at a rate of 10% on all goods, except books, food, and medical products that are exempt. Import duty is an additional sales tax applicable on all imported goods at a rate of 5%, with no exemptions.
@@ -12,37 +30,47 @@ Write an application that prints out the receipt details for these shopping bask
 
 Input (You will be graded against these and more, please make sure these work)
 
+```text
 Input 1:
 2 book at 12.49
 1 music CD at 14.99
 1 chocolate bar at 0.85
+```
 
+```text
 Input 2:
 1 imported box of chocolates at 10.00
 1 imported bottle of perfume at 47.50
+```
 
+```text
 Input 3:
 1 imported bottle of perfume at 27.99
 1 bottle of perfume at 18.99
 1 packet of headache pills at 9.75
 3 imported boxes of chocolates at 11.25
-
+```
 
 Output (Correct implementations will yield the following outputs when given the inputs above. Please carefully re-read the problem these answers are accurate)
 
+```text
 Output 1:
 2 book: 24.98
 1 music CD: 16.49
 1 chocolate bar: 0.85
 Sales Taxes: 1.50
 Total: 42.32
+```
 
+```text
 Output 2:
 1 imported box of chocolates: 10.50
 1 imported bottle of perfume: 54.65
 Sales Taxes: 7.65
 Total: 65.15
+```
 
+```text
 Output 3:
 1 imported bottle of perfume: 32.19
 1 bottle of perfume: 20.89
@@ -50,13 +78,4 @@ Output 3:
 3 imported boxes of chocolates: 35.55
 Sales Taxes: 7.90
 Total: 98.38
-
-## Specs
-I'm testing the scenarios that were given by altologica exercise.
-More tests can be added for sure.
-
-## For running the specs please run:
-
-```
-  rspec specs/sale_generator_service_spec.rb
 ```

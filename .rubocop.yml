@@ -1,0 +1,8 @@
+Lint/MissingSuper:
+  Exclude:
+    - services/**/*
+Style/Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
